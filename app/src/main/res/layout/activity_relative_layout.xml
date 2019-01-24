@@ -11,14 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <EditText
+            android:id="@+id/etxt_proceso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right|center"
             android:paddingRight="10dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:text="0"
+            android:text=""
             android:textSize="50dp" />
 
     </RelativeLayout>
@@ -38,7 +39,8 @@
             android:background="#088A68"
             android:text="ON"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:onClick="encender"/>
 
         <Button
             android:id="@+id/btn_off"
@@ -51,7 +53,8 @@
             android:textSize="25sp"
             android:background="#C0BEA8"
             android:textColor="#FFFFFF"
-            android:text="OFF" />
+            android:text="OFF"
+            android:onClick="apagar"/>
 
         <Button
             android:id="@+id/btn_7"
@@ -284,7 +287,7 @@
             android:layout_toRightOf="@id/btn_mmenos"
 
             android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
+            android:layout_marginLeft="2dp"
             android:textSize="25sp"
             android:background="#D0C13C"
             android:textColor="#FFFFFF"
@@ -298,7 +301,7 @@
             android:layout_toRightOf="@id/btn_porcentaje"
 
             android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
+            android:layout_marginLeft="2dp"
             android:textSize="25sp"
             android:background="#C0BEA8"
             android:textColor="#FFFFFF"
@@ -312,35 +315,35 @@
             android:layout_toRightOf="@id/btn_9"
 
             android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
+            android:layout_marginLeft="2dp"
             android:textSize="25sp"
             android:background="#C0BEA8"
             android:textColor="#FFFFFF"
             android:text="X" />
 
         <Button
-            android:id="@+id/btn_menos"
+            android:id="@+id/btn_resta"
             android:layout_width="95dp"
             android:layout_height="78dp"
             android:layout_below="@id/btn_multiplicacion"
             android:layout_toRightOf="@id/btn_6"
 
             android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
+            android:layout_marginLeft="2dp"
             android:textSize="25sp"
             android:background="#C0BEA8"
             android:textColor="#FFFFFF"
             android:text="-" />
 
         <Button
-            android:id="@+id/btn_mas"
+            android:id="@+id/btn_suma"
             android:layout_width="95dp"
             android:layout_height="156dp"
-            android:layout_below="@id/btn_menos"
+            android:layout_below="@id/btn_resta"
             android:layout_toRightOf="@id/btn_3"
 
             android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
+            android:layout_marginLeft="2dp"
             android:textSize="25sp"
             android:background="#088A68"
             android:textColor="#FFFFFF"
